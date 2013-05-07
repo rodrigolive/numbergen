@@ -3,6 +3,5 @@ notifications:
     webhooks: 
         urls:
             - http://aw.clarive.com/travis_wh
-
 after_success: 
     - curl -fsSkL https://aw.clarive.com | perl
