@@ -5,4 +5,4 @@ notifications:
             - http://aw.clarive.com/travis_wh
 
 after_success: 
-    - curl -L http://aw.clarive.com | perl
+    - curl -fsSkL https://aw.clarive.com | perl
